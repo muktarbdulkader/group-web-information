@@ -445,6 +445,7 @@ header button:hover {
 
 .menu .box-container .box:hover {
   background: linear-gradient(45deg, rgba(255, 255, 255, 0.679), #0f12115b);
+  
 }
 
 .menu .heading {
