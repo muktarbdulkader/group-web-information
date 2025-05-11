@@ -110,4 +110,30 @@ const toggleBtn = document.querySelector('.color-toggle');
     document.body.classList.toggle('dark-mode');
 
   })
+  document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".box").forEach((box) => {
+    const reviewId = box.getAttribute("data-id"); 
+    const likeBtn = box.querySelector(".like-btn"); 
+    const countSpan = box.querySelector(".like-count"); 
+    if (!countSpan) {
+      console.error(`Like count element not found for review ${reviewId}`);
+      return; 
+    }
 
+    
+    const savedCount = localStorage.getItem(reviewId);
+    console.log(`Saved count for ${reviewId}: ${savedCount}`);
+
+  
+    countSpan.innerText = savedCount ? savedCount : "0";
+
+    
+    likeBtn.addEventListener("click", () => {
+      let count = parseInt(countSpan.innerText); 
+      count++; 
+      countSpan.innerText = count; 
+      localStorage.setItem(reviewId, count); 
+      console.log(`New count for ${reviewId}: ${count}`);
+    });
+  });
+});

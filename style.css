@@ -735,6 +735,96 @@ footer .muktar a {
   width: 50px;
   color: rgb(16, 195, 198);
 }
+.review {
+  padding: 2rem;
+  background: linear-gradient(45deg, rgba(7, 7, 116, 0.792), #0f12115b);
+  color: #fff;
+}
+.review h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.review h1 span {
+  color: var(--main-color);
+}
+
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  /* background: linear-gradient(45deg, rgba(7, 7, 116, 0.792), #0f12115b); */
+}
+
+.review .box-container .box {
+  /* background: linear-gradient(45deg, rgba(7, 7, 116, 0.792), #0f12115b); */
+  
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+  font: 1.6rem;
+  font-size: larger;
+  line-height: 1.8;
+  color: #ccc
+  padding: 2rem 0;
+  text-align: justify;
+  font-weight: 600;
+}
+
+.review .box-container .box .user {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .box-container .box h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #fff;
+}
+.review .quote {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.review .box-container .box .stars i {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+.review .box-container .box .stars i:nth-child(n + 4) {
+  color: #ccc;
+}
+.review .box-container .box .stars i:hover {
+  color: var(--main-color);
+}
+.review .like-btn {
+  margin-top: 10px;
+  padding: 6px 14px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.review .like-btn:hover {
+  background-color: #0056b3;
+}
+
+.review .like-btn i {
+  margin-right: 5px;
+}
+
 
 @media (max-width: 1024px) {
   header {
@@ -920,6 +1010,46 @@ footer .muktar a {
     cursor: pointer;
     color: #000;
   }
+  .review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+  .review .box {
+    background: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  .review .box-container .box p {
+    font: 1.6rem;
+    font-size: larger;
+    line-height: 1.8;
+    color: #ccc;
+    font-weight: 600;
+    padding: 2rem 0;
+    text-align: justify;
+  }
+  .review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+  }
+  .review .quote {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+  }
+
+
 
   /* .menu .box-container {
     display: block;

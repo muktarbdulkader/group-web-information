@@ -9,12 +9,13 @@
     <link rel="icon" href="images/image.webp" />
     <title>HUCISA</title>
     <link rel="stylesheet" href="style.css" />
+      <script defer src="apps.js"></script>
 </head>
 
 <body>
     <header class="header">
         <div class="image"><img src="images/image.webp" alt="Logo" /> HUCISA</div>
-        
+       
         <button class="menu-toggle" id="menuToggle">
         <i class="fas fa-bars"></i>
       </button>
@@ -23,11 +24,13 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about us">About Us</a></li>
                 <li><a href="#join us">Join Us</a></li>
+                
+                <li><a href="#review">Review</a></li>
                 <li><a href="#" id="admin">Admin</a></li>
             </ul>
             <a href="#Contact Us"><button class="contact-button">Contact Us</button></a>
         </div>
-         <button class="color-toggle"><i class="fas fa-moon"></i></button>
+        <button class="color-toggle"><i class="fas fa-moon"></i></button>
     </header>
 
     <div id="adminLoginForm" class="login-form hidden">
@@ -229,6 +232,69 @@
             </div>
         </div>
     </section>
+    <section class="review" id="review">
+  <h1 class="heading">Customer's <span>Review</span></h1>
+  <div class="box-container">
+
+    <!-- Review 1 -->
+    <div class="box" data-id="review1">
+      <img src="images/img.jpg" alt="Customer feedback" class="quote" />
+      <p>
+        "Being a part of HUCISA has greatly helped me build practical skills through workshops and real-world projects. I have gained valuable connections with industry professionals and fellow students."
+      </p>
+      <img src="images/ummi.jpg" alt="Muktar Abdulkader" class="user" />
+      <h3>Muktar Abdulkader</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-half-alt"></i>
+      </div>
+      <button class="like-btn"><i class="fas fa-thumbs-up"></i> Like <span class="like-count">0</span></button>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="box" data-id="review2">
+      <img src="images/img.jpg" alt="Customer feedback" class="quote" />
+      <p>
+        "I appreciate the supportive and collaborative environment that HUCISA offers. The hands-on experience with technology and involvement in hackathons has been a game changer for my career."
+      </p>
+      <img src="images/asmare.png" alt="Asmare" class="user" />
+      <h3>Asmare</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-half-alt"></i>
+      </div>
+      <button class="like-btn"><i class="fas fa-thumbs-up"></i> Like <span class="like-count">0</span></button>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="box" data-id="review3">
+      <img src="images/img.jpg" alt="Customer feedback" class="quote" />
+      <p>
+        "Joining HUCISA has opened doors to incredible learning experiences, leadership opportunities, and exposure to the latest technologies. It's the best decision I've made during my university life."
+      </p>
+      <img src="images/jemal.png" alt="Jemal Nebi" class="user" />
+      <h3>Jemal Nebi</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-half-alt"></i>
+      </div>
+      <button class="like-btn"><i class="fas fa-thumbs-up"></i> Like <span class="like-count">0</span></button>
+    </div>
+
+  </div>
+</section>
+
+
+
     <footer class="footer" id="Contact Us">
         <div class="footer2">
             <div class="hucisa">
@@ -249,7 +315,7 @@
            
         </div>
     </footer>
-    <script src="apps.js"></script>
+    
 </body>
 
 </html>
