@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="icon" href="images/image.webp" />
+    <title>HUCISA</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="image"><img src="images/image.webp" alt="Logo" /> HUCISA</div>
+        <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
+        <div class="nav-container" id="navContainer">
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about us">About Us</a></li>
+                <li><a href="#join us">Join Us</a></li>
+                <li><a href="#" id="admin">Admin</a></li>
+            </ul>
+            <a href="#Contact Us"><button class="contact-button">Contact Us</button></a>
+        </div>
+    </header>
+
+    <div id="adminLoginForm" class="login-form hidden">
+        <form action="#" method="POST" id="adminForm"   data-netlify="true"
+            netlify-honeypot="bot-field">
+            <h2>login as</h2>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <button type="submit" id="login">Login</button>
+        </form>
+        <button id="closeButton" class="close">&times;</button>
+    </div>
+
+    <div id="overlay" class="hidden"></div>
+
+    <section class="section" id="home">
+        <h1 class="text-animated">welcome to HUCISA</h1>
+        <div>
+            <p>empowering students through innovation, technology, and community</p>
+            <span>engagement at haramaya university</span>
+        </div>
+        <button>join us</button>
+        <button class="learn">learn more</button>
+    </section>
+    <section class="container" id="about us">
+        <div class="text">
+            <h1>Purpose and Benefits</h1>
+            <span>Discover why HUCISA exists and what it offers to its members.
+        </span>
+        </div>
+        <div class="box">
+            <div class="row">
+                <img src="images/bg.jpg" alt="" />
+                <div class="row4">
+                    <div class="row2">
+                        <strong>Purpose</strong>
+                        <p>
+                            The Haramaya University Computing and Informatics Students Association (HUCISA) was founded to foster innovation, collaboration, and skill development among students. By creating an environment that supports technology-driven initiatives, HUCISA empowers
+                            students to become leaders in the ever-evolving tech landscape.
+                        </p>
+                    </div>
+                    <div class="row2">
+                        <strong>Benefits of Joining</strong>
+                        <ul>
+                            <li>Access to exclusive workshops and seminars</li>
+                            <li>Networking opportunities with industry professionals</li>
+                            <li>Hands-on experience with real-world projects</li>
+                            <li>
+                                Opportunities to participate in hackathons and competitions
+                            </li>
+                            <li>Leadership and collaboration experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="box-web">
+        <h1>Mission and Goals</h1>
+        <span>Learn about our mission and what we aim to achieve.</span>
+        <div class="box2">
+            <div class="box3">
+                <h2>mission</h2>
+                <p>
+                    HUCISA aims to empower students with cutting-edge technological knowledge, foster a culture of innovation, and promote practical skills through collaborative projects, workshops, and community service initiatives.
+                </p>
+            </div>
+            <div class="box4">
+                <h3>Goals</h3>
+                <p>
+                    Conduct workshops and seminars on emerging technologies. Organize hackathons and competitions to foster innovation. Engage in community projects to address local challenges. Support and showcase student-led initiatives and projects. Establish mentorship
+                    and networking opportunities with industry professionals.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <h1 class="heading">meet <span> our leaders</span></h1>
+        <p>
+            Empowering HUCISA with passion, expertise, and a vision for innovation.
+        </p>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/amir.png" alt="" />
+                <div>
+                    <h1>Amir Ahmed</h1>
+                </div>
+                <div class="yu">president</div>
+                <div>
+                    <h3>4th year in computer student</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/asmare.png" alt="" />
+                <div>
+                    <h1>Asmare admas</h1>
+                </div>
+                <div class="yu">genera coordinator</div>
+                <div>
+                    <h3>4th year in software engineering</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/aj.png" alt="" />
+                <div>
+                    <h1>Abdulfetah jemal</h1>
+                </div>
+                <div class="yu">Advisor</div>
+                <div>
+                    <h3>4th year in software engineering</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/jemal.png" alt="" />
+                <div>
+                    <h1>jemal GEBI</h1>
+                </div>
+                <div class="yu">vice president</div>
+                <div>
+                    <h3>5th year in software engineering</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/ruhama.png" alt="" />
+                <div>
+                    <h1>Ruhmana petros</h1>
+                </div>
+                <div class="yu">Secretary</div>
+                <div>
+                    <h3>4th year in computer student</h3>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/sena.png" alt="" />
+                <div>
+                    <h1>Sena birhanu</h1>
+                </div>
+                <div class="yu">Treasure</div>
+                <div>
+                    <h3>4th year in computer student</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="join us">
+        <div class="row">
+            <div class="iframe">
+                <h2>Why You Should Join Us</h2>
+                <p>
+                    Welcome to HUCISA, the place where innovation meets opportunity. We are more than just a student association—we are a community of ambitious individuals ready to transform the future through technology. By joining us, you’ll gain access to incredible
+                    opportunities to grow your skills, network with industry professionals, lead impactful projects, and make lifelong connections. Together, we will learn, innovate, and make a lasting impact on our community and beyond. HUCISA isn’t
+                    just an association—it’s your launchpad to success. Join us and let’s create the future, together.
+                </p>
+            </div>
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Create Account</h2>
+                </div>
+                <form action="#">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+                    <label for=" hu id"> HU ID </label>
+                    <input type="number" id="hu-id" name=" number" required />
+
+                    <label for="repassword">depertment</label>
+                    <select name="dep" id="department">
+              <option value="select">select depertment</option>
+              <option value="select">software engineering</option>
+              <option value="select">computer science</option>
+              <option value="select">information system</option>
+              <option value="select">information science</option>
+              <option value="select">information technology</option>
+            </select>
+                    <label for="repassword">year</label>
+                    <select name="year" id="year">
+              <option value="select">select year</option>
+              <option value="select">1</option>
+              <option value="select">2</option>
+              <option value="select">3</option>
+              <option value="select">4</option>
+              <option value="select">5</option>
+            </select>
+                    <label for="number">phone:</label>
+                    <input type="number" id="phone" name="number" placeholder="Enter your number" required />
+                    <label for="">reason</label>
+                    <input type="reason" id="reason" />
+
+                    <button type="submit" id="submit">summit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="Contact Us">
+        <div class="footer2">
+            <div class="hucisa">
+                <h3>HUCISA</h3>
+                <div>hello@hucisa.com</div>
+                <div>+251-916662982</div>
+            </div>
+            <div class="link">
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-telegram"></a>
+            </div>
+        </div>
+        <p>© 2024 HUCISA. All rights reserved.</p>
+        <div class="muktar">
+            created by muktar
+            <a href="https://t.me/Mukti57" class="fab fa-telegram" target="_blank"></a>
+           
+        </div>
+    </footer>
+    <script src="apps.js"></script>
+</body>
+
+</html>
