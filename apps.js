@@ -71,6 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
         `Reason: ${reason}`
     );
   });
+
+  
 });
 
 document.getElementById("menuToggle").addEventListener("click", () => {
@@ -98,4 +100,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   header.observe(menuItem2);
 });
+
+const toggleBtn = document.querySelector('.color-toggle');
+
+  document.body.classList.add('light-mode');
+
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    document.body.classList.toggle('dark-mode');
+
+  })
 
