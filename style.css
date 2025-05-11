@@ -393,7 +393,8 @@ header button:hover {
 
 .box-web span {
   font-size: 1.8rem;
-  color: var(--black);
+  color: #45a049;
+  font-weight: bold;
   line-height: 1.8em;
   display: block;
   margin-bottom: 2rem;
@@ -435,6 +436,7 @@ header button:hover {
 .box-web .box2 .box4 p {
   font-size: 1.6rem;
   color: var(--black);
+  line-height: 1.8em;
 }
 
 .menu .box-container {
